@@ -1,0 +1,13 @@
+docker:
+    path: .
+id: 2d7bbb0e-33a8-4598-ba70-02747b7f119c
+name: havva-conveyor
+resources:
+    path: resources
+streaming:
+    filename: streaming.yaml
+template: ""
+version: "0.3"
+workflows:
+    path: dags
+    version: "2"

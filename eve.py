@@ -17,6 +17,7 @@ def get_spark():
     conf = SparkConf()
     conf.set('fs.s3a.aws.credentials.provider', 'com.amazonaws.auth.DefaultAWSCredentialsProviderChain')
     conf.set("fs.s3.impl", "org.apache.hadoop.fs.s3a.S3AFileSystem")
+    conf.set("fs.s3a.endpoint", "s3.amazonaws.com")
     paks = [ 'org.apache.hadoop:hadoop-aws:3.1.2',
              'net.snowflake:snowflake-jdbc:3.13.14',
              'net.snowflake:spark-snowflake_2.12:2.10.0-spark_3.2']

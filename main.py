@@ -5,7 +5,7 @@ import logging
 SNOWFLAKE_SOURCE_NAME = "net.snowflake.spark.snowflake"
 
 
-path = "s3a://dataminded-academy-capstone-resources/raw/open_aq/"
+path = "s3a://dataminded-academy-capstone-resources2/raw/open_aq/"
 spark = get_spark()
 frame = spark.read.json(path)
 
