@@ -26,6 +26,6 @@ ConveyorSparkSubmitOperatorV2(
     num_executors=1,
     driver_instance_type="mx.small",
     executor_instance_type="mx.small",
-    aws_role="job-role-{{ macros.conveyor.env() }}",
+    aws_role="havva-conveyor-{{ macros.conveyor.env() }}",
     application="local:///app/main.py",
 )
